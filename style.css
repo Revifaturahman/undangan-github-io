@@ -275,37 +275,28 @@ body {
 
 /* mobile */
 @media (max-width: 576px) {
-  html {
-    font-size: 60%;
+  /* Penyesuaian untuk lingkaran jam atau elemen khusus lainnya */
+  .simply-countdown {
+    text-align: center; /* Misalnya, untuk mengatur posisi tengah */
   }
-  .hero h1 {
-    font-size: 4rem;
-  }
-  .hero h4 {
-    font-size: 1.2rem;
-  }
-  .hero p {
-    font-size: 1.2rem;
-  }
-  .hero a {
-    padding: 0.4rem 0.8rem;
-  }
-  .simply-countdown > .simply-section {
-    padding: 30px;
-  }
-  .card-story {
-    width: 50%;
-    height: 50%;
-  }
-  .mynavbar .navbar-brand,
-  .mynavbar .offcanvas-title {
-    font-size: 2rem; /* Sesuaikan ukuran font untuk mobile */
-  }
-  .mynavbar .nav-link {
-    font-size: 1.8rem; /* Sesuaikan ukuran font untuk mobile */
-    text-align: center;
-  }
+
+  /* Penyesuaian untuk side navbar */
   .mynavbar .offcanvas-body {
     margin-right: auto;
+  }
+
+  /* Penyesuaian untuk navigasi halaman */
+  .home h2,
+  .info h2,
+  .story h2,
+  .gallery h2 {
+    font-size: 4rem; /* Ukuran font yang sesuai untuk judul halaman */
+  }
+
+  .home p,
+  .info .description,
+  .story h3,
+  .gallery h3 {
+    font-size: 1.2rem; /* Ukuran font yang sesuai untuk teks */
   }
 }
