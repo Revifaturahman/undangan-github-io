@@ -1,0 +1,300 @@
+:root {
+  --pink: #f14e95;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgba(0, 0, 0, 0.5); /* Perbaiki notasi rgba */
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+  min-height: 4000px;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/bg-prewed-resized.png);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  filter: grayscale();
+  overflow: hidden;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 1rem;
+  color: white;
+  overflow: hidden;
+}
+
+.hero h4 {
+  font-size: 1.6rem;
+}
+
+.hero h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 6rem;
+}
+
+.hero p {
+  font-size: 1.4rem;
+}
+
+.hero a {
+  background-color: white;
+  color: var(--pink);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hero a:hover {
+  background-color: var(--pink);
+  color: white;
+}
+
+.simply-countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mynavbar {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas {
+  height: 100vh;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: 'Sacramento', cursive;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.mynavbar .nav-link {
+  text-transform: uppercase;
+}
+
+.home {
+  background-image: url(img/bg-floral1.png);
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: -6rem;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+  overflow: hidden;
+}
+
+.home h2,
+.info h2,
+.story h2,
+.gallery h2 {
+  font-size: 6rem;
+  font-family: 'Sacramento', cursive;
+  font-weight: bold;
+  color: var(--pink);
+}
+
+.home h3 {
+  font-size: 1.5rem;
+  color: gray;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  font-size: 1.1rem;
+  color: #a19d9d;
+}
+
+.home .couple {
+  margin-top: 100px;
+}
+
+.home .couple h3 {
+  font-size: 2.5rem;
+  color: var(--pink);
+  font-family: 'Sacramento', cursive;
+}
+
+.home .couple img {
+  width: 100%;
+}
+
+.info {
+  background-color: var(--bg);
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+  overflow: hidden;
+}
+
+.info .description {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: white;
+}
+
+.info .alamat {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.info .card {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  border: 1px solid #999;
+}
+
+.info .card-header {
+  border-bottom: 1px solid #999;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.info .card-body {
+  font-size: 1rem;
+}
+
+.info .card-footer {
+  font-size: 0.9rem;
+  border-top: 1px solid #999;
+  font-weight: 300;
+  color: white !important;
+}
+
+.story {
+  background-image: url(img/story2.png);
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 1rem;
+  padding-bottom: 8rem;
+}
+
+.story h2 {
+  padding-top: 6rem;
+  text-shadow: var(--shadow);
+}
+
+.story h3,
+.gallery h3 {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.timeline {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+.str {
+  position: relative;
+}
+.card-container {
+  position: relative;
+  width: 50%;
+  z-index: 1;
+}
+.gambar {
+  width: auto;
+  height: 200px;
+}
+
+.story h3 {
+  font-size: 1.5rem;
+  color: gray;
+  margin-bottom: 1rem;
+}
+
+.card-body {
+  background-color: #c5bcbc;
+}
+
+.card-text {
+  color: white;
+  font-weight: 300;
+}
+
+.gallery {
+  padding: 2rem 0;
+  background-color: #f3f3f3;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+.gallery h2,
+.gallery h3 {
+  margin-bottom: 1rem;
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 60px;
+    margin: 5px;
+  }
+
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    color: #f14e95;
+    text-align: center;
+  }
+
+  .mynavbar .offcanvas-body {
+    margin-right: auto;
+  }
+  .sticky-top {
+    overflow: hidden;
+  }
+
+  .card-story {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+/* mobile */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+  .hero h1 {
+    font-size: 4rem;
+  }
+  .hero h4 {
+    font-size: 1.2rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+  }
+  .hero a {
+    padding: 0.4rem 0.8rem;
+  }
+  .simply-countdown > .simply-section {
+    padding: 30px;
+  }
+  .card-story {
+    width: 50%;
+    height: 50%;
+  }
+}
