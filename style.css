@@ -297,4 +297,15 @@ body {
     width: 50%;
     height: 50%;
   }
+  .mynavbar .navbar-brand,
+  .mynavbar .offcanvas-title {
+    font-size: 2rem; /* Sesuaikan ukuran font untuk mobile */
+  }
+  .mynavbar .nav-link {
+    font-size: 1.8rem; /* Sesuaikan ukuran font untuk mobile */
+    text-align: center;
+  }
+  .mynavbar .offcanvas-body {
+    margin-right: auto;
+  }
 }
