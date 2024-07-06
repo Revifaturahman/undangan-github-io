@@ -70,32 +70,11 @@ body {
   justify-content: center;
 }
 
-.mynavbar {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  backdrop-filter: blur(4px);
-}
-
-.mynavbar .offcanvas {
-  height: 100vh;
-}
-
-.mynavbar .navbar-brand,
-.mynavbar .offcanvas-title {
-  font-family: 'Sacramento', cursive;
-  font-size: 3rem;
-  font-weight: 600;
-}
-
-.mynavbar .nav-link {
-  text-transform: uppercase;
-}
-
 .home {
   background-image: url(img/bg-floral1.png);
   background-size: cover;
   min-height: 100vh;
-  margin-top: -6rem;
-  padding-top: 15rem;
+  padding-top: 9rem;
   padding-bottom: 5rem;
   overflow: hidden;
 }
@@ -137,7 +116,7 @@ body {
 
 .info {
   background-color: var(--bg);
-  padding-top: 10rem;
+  padding-top: 9rem;
   padding-bottom: 8rem;
   overflow: hidden;
 }
@@ -236,7 +215,7 @@ body {
 .gallery {
   padding: 2rem 0;
   background-color: #f3f3f3;
-  padding-top: 10rem;
+  padding-top: 9rem;
   padding-bottom: 8rem;
 }
 .gallery h2,
@@ -254,49 +233,42 @@ body {
     margin: 5px;
   }
 
-  .mynavbar .nav-link {
-    font-size: 2rem;
-    color: #f14e95;
-    text-align: center;
-  }
-
-  .mynavbar .offcanvas-body {
-    margin-right: auto;
-  }
-  .sticky-top {
-    overflow: hidden;
-  }
-
   .card-story {
     width: 80%;
     height: 80%;
   }
+  .str {
+    position: relative;
+  }
+  .card-container {
+    position: relative;
+    width: 50%;
+    z-index: 1;
+  }
 }
 
-/* mobile */
-@media (max-width: 576px) {
-  /* Penyesuaian untuk lingkaran jam atau elemen khusus lainnya */
-  .simply-countdown {
-    text-align: center; /* Misalnya, untuk mengatur posisi tengah */
-  }
+/* Hp */
 
-  /* Penyesuaian untuk side navbar */
-  .mynavbar .offcanvas-body {
-    margin-right: auto;
+@media (max-width: 480px) {
+  .mynavbar .offcanvas {
+    width: 170px;
   }
-
-  /* Penyesuaian untuk navigasi halaman */
-  .home h2,
-  .info h2,
-  .story h2,
-  .gallery h2 {
-    font-size: 4rem; /* Ukuran font yang sesuai untuk judul halaman */
+  .timeline {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
   }
-
-  .home p,
-  .info .description,
-  .story h3,
-  .gallery h3 {
-    font-size: 1.2rem; /* Ukuran font yang sesuai untuk teks */
+  .str {
+    position: relative;
+  }
+  .card-container {
+    position: relative;
+    width: 50%;
+    z-index: 1;
   }
 }
